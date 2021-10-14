@@ -1,4 +1,4 @@
-import { NotImplementedError } from '../extensions/index.js';
+const { NotImplementedError } = require('../extensions/index.js');
 
 // import { Node } from '../extensions/list-tree.js';
 
@@ -13,7 +13,7 @@ function Node(value) {
   this.right = null
 }
 
-export default class BinarySearchTree {
+module.exports = class BinarySearchTree {
 
   #root = null
 
